@@ -37,6 +37,26 @@ def gcd(m,n):
             i=i-1
 print(gcd(10,12))
 
+#----------------------------Array in Python-----------------
+
+import array
+arr=array.array('i',[3,4,5,6,3,7])
+print("Old array : " )
+for i in range(0,len(arr)):
+    print(arr[i],end=" ")
+arr.append(10)
+print('\r')
+print("New array : ")
+for j in range(0,len(arr)):
+    print(arr[j],end=" ")
+print('\r')
+print(arr.index(10))
+arr.reverse()
+print("After reverse the vale of array is : ")
+for j in range(0,7):
+    print(arr[j],end=" ")
+
+
 #--------------------------------Linear Search--------------------------------------------
 
 def linearSearch(seq,v):
