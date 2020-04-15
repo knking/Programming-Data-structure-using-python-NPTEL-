@@ -152,6 +152,16 @@ print(inverse(n=int(input("Enter number to reverse : "))))
 
 
 
-
+def anangram_str(str1, str2):
+    sort_str1=sorted(str1)
+    sort_str2=sorted(str2)
+    if len(str1)==len(str2):
+        if sort_str1==sort_str2:
+            print("Given string is   Anagram")
+        else:
+            print("Given String is not  Anagram")
+# s1="earth"
+# s2="heart"
+anangram_str("earth","heart")
 
 
